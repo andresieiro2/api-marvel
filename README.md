@@ -16,15 +16,15 @@ Ao clicar em um item da lista, apresente os detalhes da edição. O detalhe deve
  - O Layout precisa ser responsivo.
 
 #### Ganha mais pontos:
- -  Criação de testes instrumentados
- -  Automação com Grunt ou Gulp
+ -  Criação de testes instrumentados.
+ -  Automação com Grunt ou Gulp.
  -  Otimizações para aumentar a velocidade de renderização.
  
 #### Submissão
- - Criar um fork desse projeto e entregar via Pull Request
+ - Criar um fork desse projeto e entregar via Pull Request.
 
 #### Prazo de Entrega
- - 4 Dias
+ - 4 Dias.
 
 #### Dados de acesso a api da Marvel
  - Portal: https://developer.marvel.com/
