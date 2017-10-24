@@ -15,7 +15,7 @@ Ao clicar em um item da lista, apresente os detalhes da edição. O detalhe deve
  - O Layout precisa ser responsivo.
 
 #### Ganha mais pontos:
- - Criação testes instrumentados
+ - Criação de testes instrumentados
 -  Automação com NodeJS, Grunt ou Gulp
 -  Otimizações para aumentar a velocidade de renderização.
  
