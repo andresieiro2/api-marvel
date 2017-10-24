@@ -3,7 +3,7 @@ Crie uma aplicação utilizando as Api's do portal Developers da Marvel. As tare
 
 ##### Lista dos quadrinhos do Homem de Ferro ###
 Crie uma lista de todas as edições de quadrinhos que o Homem de Ferro aparece ordenado por data. Cada item da lista deve conter imagem, titulo, descrição e data da edição. 
-Utilize Scroll infinito para carregar novos itens e LazyLoad para o load das imagens.
+Utilize Scroll infinito para carregar novos itens e LazyLoad para o carregamento das imagens.
 
 ##### Detalhe da Edição ###
 Ao clicar em um item da lista, apresente os detalhes da edição. O detalhe deve conter a maior quantidade possível de informações a respeito.
