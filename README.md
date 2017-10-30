@@ -14,6 +14,8 @@ Ao clicar em um item da lista, apresente os detalhes da edição. O detalhe deve
  - Utilize JQuery.
  - Não utilize Bootstrap ou outros frameworks do tipo.
  - O Layout precisa ser responsivo.
+ - Descreva no README os passos para execução do seu projeto.
+ - Deixe seu repositório público para analise do Pull Request.
 
 #### Ganha mais pontos:
  -  Criação de testes instrumentados.
@@ -29,3 +31,5 @@ Ao clicar em um item da lista, apresente os detalhes da edição. O detalhe deve
 #### Dados de acesso a api da Marvel
  - Portal: https://developer.marvel.com/
  - Documentação: https://developer.marvel.com/docs
+ 
+ # Boa Sorte
