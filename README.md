@@ -32,4 +32,4 @@ Ao clicar em um item da lista, apresente os detalhes da edição. O detalhe deve
  - Portal: https://developer.marvel.com/
  - Documentação: https://developer.marvel.com/docs
  
- # Boa Sorte
+# Boa Sorte
