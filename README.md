@@ -1,28 +1,28 @@
 # Desafio Frontend
-Crie uma aplicação utilizando as Api's do portal Developers da Marvel. As tarefas são as seguintes: 
+Crie uma aplicaÃ§Ã£o utilizando as Api's do portal Developers da Marvel. As tarefas sÃ£o as seguintes:
 
 ##### Lista dos quadrinhos do Homem de Ferro ###
-Crie uma lista de todas as edições de quadrinhos que o Homem de Ferro aparece ordenado por data. Cada item da lista deve conter imagem, titulo, descrição e data da edição. 
+Crie uma lista de todas as ediÃ§Ãµes de quadrinhos que o Homem de Ferro aparece ordenado por data. Cada item da lista deve conter imagem, titulo, descriÃ§Ã£o e data da ediÃ§Ã£o.
 Utilize Scroll infinito para carregar novos itens e LazyLoad para o carregamento das imagens.
 
-##### Detalhe da Edição ###
-Ao clicar em um item da lista, apresente os detalhes da edição. O detalhe deve conter a maior quantidade possível de informações a respeito.
+##### Detalhe da EdiÃ§Ã£o ###
+Ao clicar em um item da lista, apresente os detalhes da ediÃ§Ã£o. O detalhe deve conter a maior quantidade possÃ­vel de informaÃ§Ãµes a respeito.
 
 #### Requisitos:
  - Utilize HTML5 + CSS3 com Flex.
  - Utilize Angular, React ou VueJS no desenvolvimento.
  - Utilize JQuery.
- - Não utilize Bootstrap ou outros frameworks do tipo.
+ - NÃ£o utilize Bootstrap ou outros frameworks do tipo.
  - O Layout precisa ser responsivo.
- - Descreva no README os passos para execução do seu projeto.
- - Deixe seu repositório público para analise do Pull Request.
+ - Descreva no README os passos para execuÃ§Ã£o do seu projeto.
+ - Deixe seu repositÃ³rio pÃºblico para analise do Pull Request.
 
 #### Ganha mais pontos:
- -  Criação de testes instrumentados.
- -  Automação com Grunt ou Gulp.
- -  Otimizações para aumentar a velocidade de renderização.
- 
-#### Submissão
+ -  CriaÃ§Ã£o de testes instrumentados.
+ -  AutomaÃ§Ã£o com Grunt ou Gulp.
+ -  OtimizaÃ§Ãµes para aumentar a velocidade de renderizaÃ§Ã£o.
+
+#### SubmissÃ£o
  - Criar um fork desse projeto e entregar via Pull Request.
 
 #### Prazo de Entrega
@@ -30,6 +30,6 @@ Ao clicar em um item da lista, apresente os detalhes da edição. O detalhe deve
 
 #### Dados de acesso a api da Marvel
  - Portal: https://developer.marvel.com/
- - Documentação: https://developer.marvel.com/docs
- 
+ - DocumentaÃ§Ã£o: https://developer.marvel.com/docs
+
 # Boa Sorte

@@ -1,0 +1,22 @@
+.Header {
+  background-color: #3d3d3d;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .logo {
+    width: 80%;
+    max-width: 120px;
+  }
+
+  .title {
+    font-size: 18px;
+    color: white;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+  }
+
+
+};

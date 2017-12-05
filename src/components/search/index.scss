@@ -1,0 +1,37 @@
+.search {
+  height: 40px;
+  background-color: #EAEAE8;
+
+  .search-input,
+  .search-button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .search-input {
+    background-color: white;
+    margin-right: 0;
+    border: 1px solid #e0dddd;
+    padding-left: 10px;
+  }
+
+  .search-button {
+    padding:0;
+    box-shadow: none;
+    background-color: #f22325;
+    color: white;
+    cursor: pointer;
+    &:hover {
+      background-color: #ff442f;
+    }
+
+    &:disabled {
+      color: #CCCCCD;
+      background-color: #f0f0f0;
+      pointer-events: none;
+    }
+  }
+};
