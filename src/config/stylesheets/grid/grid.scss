@@ -1,3 +1,7 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
 .container {
   width: 1200px;
   margin: auto;
@@ -8,21 +12,21 @@
   }
 
   @media (max-width:991px) {
-    width:100%;
+    width:90%;
   }
 }
 
 .row {
-  width: 100%;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .d-flex  {
   display: flex;
-}
-
-.f-wrap {
-  flex-wrap: wrap;
 }
 
 [class*='col'] {

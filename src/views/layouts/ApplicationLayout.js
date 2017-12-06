@@ -8,7 +8,7 @@ export default class ApplicationLayout extends React.Component {
     return (
       <div>
         <Header />
-        <Search />
+        <Search ironman={this.props.params.idCharacter !== "1009368" }/>
         {this.props.children}
         <LoaderGlobal />
       </div>

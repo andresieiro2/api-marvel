@@ -13,7 +13,7 @@ class Characters extends React.Component {
       {
         this.props.listCharacters &&
         (
-          <div className="row f-wrap ">
+          <div className="row ">
             <p className="col-12 col-md-12 header-list">Resultados da busca</p>
             {
               this.props.listCharacters.map((item,index) =>

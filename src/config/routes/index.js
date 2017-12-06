@@ -11,6 +11,7 @@ import history from './History';
 import ApplicationLayout from './../../views/layouts/ApplicationLayout';
 
 import HomeView from './../../views/home';
+import ComicsView from './../../views/comics';
 import NotFoundView from './../../views/errors/NotFound';
 
 export default (store) => {
@@ -20,6 +21,7 @@ export default (store) => {
     <Router history={syncHistory}>
       <Route path="/" component={ApplicationLayout}>
         <IndexRoute component={HomeView} />
+        <Route path="/comics/:idCharacter" component={ComicsView} />
         <Route path="*" component={NotFoundView} />
       </Route>
     </Router>

@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "engines" : { "node" : ">=8.1.4" },
+  "engineStrict" : true,
   "scripts": {
     "build": "rm -rf build && NODE_ENV=production ./node_modules/.bin/webpack -p",
     "start": "./node_modules/.bin/webpack-dev-server"

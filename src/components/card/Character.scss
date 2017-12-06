@@ -1,20 +1,25 @@
 .Character {
-  margin-top: 10px;
 
+  margin-top: 10px;
+  margin-bottom: 30px;
   .content {
-    border-bottom: 1px solid #3d3d3d;
+    border-top: 5px solid $gray;
+    border-left: 1px solid $gray;
+
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 20px;
+    @include shadow(2px 3px 5px -1px rgba(0,0,0,0.35) )
   }
 
   .name {
-    height: 20px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    color: $red;
+    text-transform: uppercase;
   }
 
   .image {
     width: 100%;
+    min-width: 256.5px;
     height: 180px;
     object-fit: cover;
   }
@@ -27,8 +32,13 @@
     box-shadow: none;
     border: none;
     height: 30px;
+    display: block;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
     cursor: pointer;
-    
+    text-decoration: none;
+
     i {
       margin-right: 10px;
     }
