@@ -8,11 +8,11 @@ export default class HomeView extends React.Component {
       <div className="HomeView">
         <div className="container">
           <div className="row">
-            <div className="col-12">
+            <div className="col-12 col-md-12">
               <CharactersList />
             </div>
           </div>
-        </div>    
+        </div>
       </div>
     );
   }

@@ -1,0 +1,64 @@
+.container {
+  width: 1200px;
+  margin: auto;
+  display: block;
+
+  @media (max-width:1201px) {
+    width:990px;
+  }
+
+  @media (max-width:991px) {
+    width:100%;
+  }
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.d-flex  {
+  display: flex;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+[class*='col'] {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.px-0 {
+  padding: 0;
+}
+
+.px-l-0 {
+  padding-left: 0;
+}
+
+.px-r-0 {
+  padding-right: 0;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    @media (max-width:991px) {
+      width: (100/ (12/$i) ) * 1% !important;
+    }
+  }
+
+  .col-md-#{$i} {
+    width: (100/ (12/$i) ) * 1% ;
+  }
+}
