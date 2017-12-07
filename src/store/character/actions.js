@@ -8,12 +8,16 @@ export const setCharactersList = (characters, nameCharacter) => ({
  isLoading: false,
 });
 
+
+export const resetCharactersList = () => ({
+ type: types.RESET_CHARACTERS_LIST,
+});
+
 export const setCharactersListPaged = (characters) => ({
  type: types.SET_CHARACTERS_LIST_PAGED,
  characters,
  isLoading: false,
 });
-
 
 export const setCharactersComics = (comics) => ({
  type: types.SET_CHARACTERS_COMICS_LIST,
@@ -28,14 +32,21 @@ export const setCharactersComicsPaged = (comics) => ({
 });
 
 
+export const resetPagination = () => ({
+ type: types.RESET_PAGINATION,
+});
+
+
+export const setSearchValue = (searchValue) => ({
+ type: types.SET_SEARCH_VALUE,
+ searchValue
+})
 
 
 //**** EXTERNAL ACTIONS
 
 export const getCharactersByName = (name) => (dispatch, getState) => {
-  dispatch({
-    type: types.RESET_CHARACTERS_LIST,
-  })
+  dispatch(resetCharactersList());
 
   dispatch({
     type: types.GET_CHARACTERS_LIST,

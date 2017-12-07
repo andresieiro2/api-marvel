@@ -28,6 +28,7 @@ class Comics extends React.Component {
      <div className="List Comics" >
        {
          this.props.comics &&
+         this.props.comics.length > 0  &&
          (
            <div className="row ">
              <p className="col-12 col-md-12 header-list">Resultados da busca</p>

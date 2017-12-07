@@ -5,7 +5,8 @@ import { Link } from 'react-router';
 
 import './index.scss';
 
-import { getCharactersByName } from './../../store/character/actions';
+import { getCharactersByName,setSearchValue } from './../../store/character/actions';
+import * as CharactersSelectors from './../../store/character/selectors';
 
 class Search extends React.Component {
   constructor(props) {
@@ -19,7 +20,7 @@ class Search extends React.Component {
 
   keyDownHandler(e) {
     if(e.key.toLowerCase() === 'enter')  {
-      this.props.searchCharacters(this.state.search);
+      this.props.searchCharacters(this.props.searchValue);
       e.target.blur();
     }
   }
@@ -42,16 +43,16 @@ class Search extends React.Component {
         <div className="row">
           <div className="col-9 col-md-10 px-r-0">
             <input type="text"  className="search-input"
-              value={this.state.search}
-              placeholder="Type the character's name. Ex: Iron Man"
-              onChange={ (e) => this.setState({search:e.target.value})}
+              value={this.props.searchValue}
+              placeholder="Type the character's name. Ex: Spider Man"
+              onChange={ (e) => this.props.setSearch(e.target.value)}
               onKeyDown={this.keyDownHandler }
             />
           </div>
           <div className="col-3 col-md-2 px-l-0">
             <button className="btn search-button"
-              disabled={this.state.search.length === 0}
-              onClick={() => {this.props.searchCharacters(this.state.search)}}
+              disabled={this.props.searchValue.length === 0}
+              onClick={() => {this.props.searchCharacters(this.props.searchValue)}}
             >
              <i className="fa fa-search"></i>
             </button>
@@ -65,7 +66,9 @@ class Search extends React.Component {
   };
 
 const mapStateToProps = (state) => {
- return { };
+ return {
+   searchValue: CharactersSelectors.getActualSearch(state)
+ };
 }
 
 const mapDispatchToProps = dispatch => {
@@ -73,7 +76,10 @@ const mapDispatchToProps = dispatch => {
    searchCharacters: (name) => {
     dispatch(push('/'))
     dispatch(getCharactersByName(name));
-   }
+   },
+   setSearch: (searchVal) => {
+    dispatch(setSearchValue(searchVal));
+   },
  };
 }
 
