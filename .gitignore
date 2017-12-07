@@ -1,6 +1,5 @@
 node_modules/
 tmp/*
-build/
 !.gitkeep
 npm-debug.log
 .DS_Store
