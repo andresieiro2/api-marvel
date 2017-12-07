@@ -10,7 +10,7 @@ const config = {
   },
   production: {
     path: '/',
-    baseUrl: 'https://mvl-comics.herokuapp.com',
+    baseUrl: '',
     endpoint: 'https://gateway.marvel.com/v1/public/'
   },
 };
