@@ -9,12 +9,7 @@
   "engineStrict": true,
   "scripts": {
     "build": "rm -rf build && NODE_ENV=production ./node_modules/.bin/webpack -p",
-<<<<<<< HEAD
-    "start": "./node_modules/.bin/webpack-dev-server ",
-    "heroku-prebuild": "npm install --only=dev"
-=======
     "start": "node node_modules/http-server/bin/http-server ./build"
->>>>>>> 319cd2cdf7bbe10aff2e1b09b403d74c5c98ec31
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
