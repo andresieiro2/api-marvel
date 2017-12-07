@@ -1,4 +1,4 @@
-export const getActualCharacter = state => state.character.actual;
+export const getActualSearch = state => state.character.nameCharacter;
 
 export const getCharactersList = state => state.character.list.results ;
 

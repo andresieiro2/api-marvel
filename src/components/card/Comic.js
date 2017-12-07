@@ -21,8 +21,8 @@ const Comic = ({...props}) => {
         </div>
 
 
-        <p className="description">
-          {props.description}
+        <p className="description" dangerouslySetInnerHTML={ { __html: props.description }}>
+          {}
         </p>
 
       </div>

@@ -24,6 +24,14 @@ const BaseListHOC = (WrappedList) => {
       return (
         <div className="fullwidth">
           <WrappedList {...this.props} offset={this.state.offset}/>
+          { this.props.metaList.count === 0
+            && this.props.metaList.total === 0
+            && this.props.metaList.searched && (
+              <p>
+                Nenhum resultado encontrado
+              </p>
+            )
+          }
           {
             this.props.metaList.count !== this.props.metaList.total && (
               <Paginator count={this.props.metaList.count} total={ this.props.metaList.total }

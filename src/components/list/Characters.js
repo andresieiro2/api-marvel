@@ -22,6 +22,7 @@ class Characters extends React.Component {
      <div className="List Characters" >
       {
         this.props.listCharacters &&
+        this.props.listCharacters.length > 0  &&
         (
           <div className="row ">
             <p className="col-12 col-md-12 header-list">Resultados da busca</p>

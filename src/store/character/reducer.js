@@ -9,6 +9,7 @@ const initialState = {
    limit: 10,
    offset: 0,
    total: 0,
+   searched: false,
  }
 };
 
@@ -24,6 +25,7 @@ export default function reduce(state = initialState, action = {}) {
           limit: action.characters.limit,
           offset: action.characters.offset,
           total: action.characters.total,
+          searched: true,
         },
         nameCharacter: action.nameCharacter,
       }
@@ -38,6 +40,7 @@ export default function reduce(state = initialState, action = {}) {
             limit: action.characters.limit,
             offset: action.characters.offset,
             total: action.characters.total,
+            searched: true,
           },
         }
     case types.SET_CHARACTERS_COMICS_LIST:
@@ -49,6 +52,7 @@ export default function reduce(state = initialState, action = {}) {
           limit: action.comics.limit,
           offset: action.comics.offset,
           total: action.comics.total,
+          searched: true,
         },
       }
     case types.SET_CHARACTERS_COMICS_LIST_PAGED:
@@ -62,18 +66,38 @@ export default function reduce(state = initialState, action = {}) {
           limit: action.comics.limit,
           offset: action.comics.offset,
           total: action.comics.total,
+          searched: true,
         },
       }
     case types.RESET_CHARACTERS_LIST:
       return {
         ...state,
-        name: '',
+        nameCharacter: "",
         list: [],
+        metaList: {
+          ...initialState.metaList,
+        },
       }
     case types.RESET_CHARACTERS_COMICS_LIST:
       return {
         ...state,
         comics: [],
+        metaList: {
+          ...initialState.metaList,
+        },
+      }
+      case types.RESET_PAGINATION:
+        return {
+          ...state,
+          metaList: {
+            ...initialState.metaList,
+          },
+          nameCharacter: "",
+        }
+    case types.SET_SEARCH_VALUE:
+      return {
+        ...state,
+        nameCharacter: action.searchValue,
       }
     default:
       return state;

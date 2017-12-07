@@ -1,7 +1,7 @@
 Ferramenta utilizadas no projeto:
 
 React (Components, Stateless Components, HOC)
-Redux (actions, selectors, reducers, actiontypes)
+Redux (actions, selectors, reducers, actiontypes, middlewares(para exibir loading) )
 React-Router
 Fetch (for api calls)
 CSS3 (transitions, Flexbox)
