@@ -1,35 +1,21 @@
-# Desafio Frontend
-Crie uma aplicaÃ§Ã£o utilizando as Api's do portal Developers da Marvel. As tarefas sÃ£o as seguintes:
+Ferramenta utilizadas no projeto:
 
-##### Lista dos quadrinhos do Homem de Ferro ###
-Crie uma lista de todas as ediÃ§Ãµes de quadrinhos que o Homem de Ferro aparece ordenado por data. Cada item da lista deve conter imagem, titulo, descriÃ§Ã£o e data da ediÃ§Ã£o.
-Utilize Scroll infinito para carregar novos itens e LazyLoad para o carregamento das imagens.
+React (Components, Stateless Components, HOC)
+Redux (actions, selectors, reducers, actiontypes)
+React-Router
+Fetch (for api calls)
+CSS3 (transitions, Flexbox)
+Sass (mixins, for, extends )
+Webpack (Build for production(generates a smaller bundle.js), loaders );
 
-##### Detalhe da EdiÃ§Ã£o ###
-Ao clicar em um item da lista, apresente os detalhes da ediÃ§Ã£o. O detalhe deve conter a maior quantidade possÃ­vel de informaÃ§Ãµes a respeito.
 
-#### Requisitos:
- - Utilize HTML5 + CSS3 com Flex.
- - Utilize Angular, React ou VueJS no desenvolvimento.
- - Utilize JQuery.
- - NÃ£o utilize Bootstrap ou outros frameworks do tipo.
- - O Layout precisa ser responsivo.
- - Descreva no README os passos para execuÃ§Ã£o do seu projeto.
- - Deixe seu repositÃ³rio pÃºblico para analise do Pull Request.
 
-#### Ganha mais pontos:
- -  CriaÃ§Ã£o de testes instrumentados.
- -  AutomaÃ§Ã£o com Grunt ou Gulp.
- -  OtimizaÃ§Ãµes para aumentar a velocidade de renderizaÃ§Ã£o.
+Criei um banner para acessar diretamente a lista de HQs do Homem de Ferro, ele esta localizado no topo da home.
 
-#### SubmissÃ£o
- - Criar um fork desse projeto e entregar via Pull Request.
+Adicionei uma barra de busca de personagens, para que possa ser buscados os HQs de qualquer personagem
 
-#### Prazo de Entrega
- - 4 Dias.
+Criei um HOC para as listas de conteudo, tanto de personagens quanto a de HQs, fazendo um componente mais reutilizavel.
 
-#### Dados de acesso a api da Marvel
- - Portal: https://developer.marvel.com/
- - DocumentaÃ§Ã£o: https://developer.marvel.com/docs
+Criei cards para cada tipo de item das listas.
 
-# Boa Sorte
+Criei um grid basico no Sass, baseado no Bootstrap mas bem mais simples e util para um site simples.
