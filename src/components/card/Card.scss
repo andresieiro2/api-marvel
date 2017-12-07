@@ -1,8 +1,9 @@
-.Character {
+.Card {
 
   margin-top: 10px;
   margin-bottom: 30px;
   .content {
+    width: 100%;
     border-top: 5px solid $gray;
     border-left: 1px solid $gray;
 
@@ -13,19 +14,24 @@
   }
 
   .name {
+    font-size: 18px;
     color: $red;
     text-transform: uppercase;
+    width: 100%;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   .image {
     width: 100%;
-    min-width: 256.5px;
+    // min-width: 256.5px;
+    height: 180px;
     height: 180px;
     object-fit: cover;
   }
 
-  .comics-btn,
-  .details-btn {
+  .comics-btn {
     margin-top: 10px;
     width: 100%;
     padding:0;
@@ -41,6 +47,11 @@
 
     i {
       margin-right: 10px;
+    }
+
+    &.disabled {
+      pointer-events: none;
+      background-color: #CCCCD0;
     }
   }
 
@@ -65,6 +76,43 @@
     &:disabled {
       color: #CCCCCD;
       background-color: #f0f0f0;
+    }
+  }
+
+  &.comic {
+    .image {
+      height: 300px;
+      min-height: 300px;
+    }
+
+    .subtitle {
+      font-size: 12px;
+      color: $red;
+      margin: 0;
+      margin-top: 10px;
+      padding: 0;
+    }
+
+    .description {
+      height: 150px;
+      max-height: 150px;
+      overflow-y: auto;
+    }
+
+    .characters-list {
+      border-bottom: 1px solid $gray;
+      padding-bottom: 10px;
+
+      span {
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+        &:not(:nth-child(2)) {
+          &:before {
+            content: ', '
+          }
+        }
+      }
     }
   }
 };

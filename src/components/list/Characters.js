@@ -1,15 +1,25 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import './Characters.scss';
+import './List.scss';
 
+import BaseListHOC from './BaseListHOC'
 import CharacterCard from './../card/Character';
 
 import * as CharacterSelectors from './../../store/character/selectors';
 
+import { getCharactersByNamePaged } from './../../store/character/actions';
+
 class Characters extends React.Component {
+
+  componentWillUpdate(nextProps){
+    if(this.props.offset !== nextProps.offset ) {
+      this.props.getCharactersPaged(nextProps.offset);
+    }
+  }
+
  render() {
    return (
-     <div className="Characters" >
+     <div className="List Characters" >
       {
         this.props.listCharacters &&
         (
@@ -38,7 +48,13 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = dispatch => {
- return { };
+ return {
+   getCharactersPaged: (offset) => {
+     dispatch(getCharactersByNamePaged(offset));
+   }
+ };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Characters);
+const listConnected = connect(mapStateToProps, mapDispatchToProps)(Characters);
+
+export default BaseListHOC(listConnected);

@@ -1,0 +1,26 @@
+.paginator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+
+  .counter {
+    width: 100px;
+  }
+
+  .btn {
+    width: 50%;
+    display: block;
+    height: 40px;
+    font-size: 16px;
+    padding:0;
+    box-shadow: none;
+    background-color: #f22325;
+    color: white;
+    cursor: pointer;
+    &:hover {
+      background-color: #ff442f;
+    }
+  }
+};

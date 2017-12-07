@@ -13,9 +13,18 @@ class Search extends React.Component {
     this.state = {
       search: "",
     }
+
+    this.keyDownHandler = this.keyDownHandler.bind(this);
   }
 
- render() {
+  keyDownHandler(e) {
+    if(e.key.toLowerCase() === 'enter')  {
+      this.props.searchCharacters(this.state.search);
+      e.target.blur();
+    }
+  }
+
+  render() {
    return (
      <div className={`search ${this.props.ironman ? 'ironman' : '' }`} >
       <div className="container">
@@ -36,6 +45,7 @@ class Search extends React.Component {
               value={this.state.search}
               placeholder="Type the character's name. Ex: Iron Man"
               onChange={ (e) => this.setState({search:e.target.value})}
+              onKeyDown={this.keyDownHandler }
             />
           </div>
           <div className="col-3 col-md-2 px-l-0">
@@ -51,8 +61,8 @@ class Search extends React.Component {
       </div>
      </div>
    );
- }
-};
+  }
+  };
 
 const mapStateToProps = (state) => {
  return { };
