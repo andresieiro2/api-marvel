@@ -34,7 +34,7 @@ module.exports = {
   devServer: {
     inline: true,
     hot: true,
-    host: 'https://mvl-comics.herokuapp.com',
+    host: 'mvl-comics.herokuapp.com',
     contentBase: './public',
     port:  process.env.PORT || 4000,
     historyApiFallback: true,
