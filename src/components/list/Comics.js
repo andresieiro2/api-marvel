@@ -15,7 +15,7 @@ class Comics extends React.Component {
 
   componentWillUpdate(nextProps){
     if(this.props.idCharacter !== nextProps.idCharacter  ){
-      this.props.getComics(this.props.idCharacter);
+      this.props.getComics(nextProps.idCharacter);
     } else {
       if(this.props.offset !== nextProps.offset ) {
         this.props.getComicsPaged(this.props.idCharacter, nextProps.offset);
