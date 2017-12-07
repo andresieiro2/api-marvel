@@ -1,8 +1,12 @@
 ----
 Para rodar a aplicaçao
+
 npm install
+
 npm start
-aguarde....
+
+aguarde...
+
 abrir http://localhost:4000/
 
 ----
@@ -10,11 +14,18 @@ abrir http://localhost:4000/
 Ferramenta utilizadas no projeto:
 
 React (Components, Stateless Components, HOC)
+
 Redux (actions, selectors, reducers, actiontypes, middlewares(para exibir loading) )
+
 React-Router
+
 Fetch (for api calls)
+
 CSS3 (transitions, Flexbox)
+
 Sass (mixins, for, extends )
+
+
 Webpack (Build for production(generates a smaller bundle.js), loaders );
 
 
