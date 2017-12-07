@@ -1,3 +1,12 @@
+----
+Para rodar a aplicaçao
+npm install
+npm start
+aguarde....
+abrir http://localhost:4000/
+
+----
+
 Ferramenta utilizadas no projeto:
 
 React (Components, Stateless Components, HOC)
